@@ -951,9 +951,12 @@
 						ASSIGN $t ~0<br><br>
 					$t=$b?:2;</td>
 				</tr><tr>
-					<td>ZEND_DECLARE_LAMBDA_FUNCTION</td>
+					<td>DECLARE_LAMBDA_FUNCTION</td>
 					<td></td>
-					<td></td>
+					<td>DECLARE_LAMBDA_FUNCTION "\000{clousre}C:\\"+ ~0<br>
+						INIT_DYNAMIC_CALL ~0<BR>
+						DO_FCALL<br><br>
+					(function(){return "phpinfo";})();</td>
 				</tr><tr>
 					<td>ADD_TRAIT</td>
 					<td>followed by BIND_TRAITS</td>
